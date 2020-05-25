@@ -3,6 +3,13 @@
 ## DataSet
 
 Used Custom prepared dataset to train model
+
+Link for Custom Data - [Click here](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14)
+
+### Sample Images
+
+## Data Statistics
+
 * fg-bg -- 400k
 * bg --- 100
 * mask ---400k
@@ -33,3 +40,6 @@ Split at the head
 * Adam
 ## Scheduler
 * ReduceLrOnPleateau
+
+
+## This is just a gist. Will document the whole process shortly.
