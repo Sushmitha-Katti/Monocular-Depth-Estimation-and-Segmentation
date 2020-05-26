@@ -15,7 +15,7 @@
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
-<p align="center"><bold>"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"</bold></p>
+<p align="center"><b>"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"</b></p>
 
 
 <p align="center">
@@ -106,10 +106,10 @@ The goal of depth estimation is to obtain a representation of the spatial struct
     
    This is the interesting part. It poses lot of questions.
    
-     * Which model to chose?
-     * How to combine both models?
-     * Till now we had labels as 0,1,2..... But now mask and depth.
-     * How the model should be? How to convert object recognised model to mask and depth models?
+   * Which model to chose?
+   * How to combine both models?
+   * Till now we had labels as 0,1,2..... But now mask and depth.
+   * How the model should be? How to convert object recognised model to mask and depth models?
      
    Till now we mostly delt with object recognisation. But now masks and segments. Thought that there may be complicated models designed for these problems. Started reading papers about mask and depth. Now broke the problem into 2 parts.
    
