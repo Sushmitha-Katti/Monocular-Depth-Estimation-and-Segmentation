@@ -1,4 +1,4 @@
--># Monocular-Depth-Estimation-and-Segmentation<-
+-> # Monocular-Depth-Estimation-and-Segmentation <-
 
 ## For any AI/ML problem there will be some generic steps to perform.
 1. Probelm statement.
@@ -17,7 +17,7 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 
 **"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"**
 
-->![problem](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg)<-
+-> ![problem](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg) <-
 
   
     
