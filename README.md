@@ -17,7 +17,10 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 
 **"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"**
 
-<span style="display:block;text-align:center">![problem](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg)</span>
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg">
+</p>
 
   
     
