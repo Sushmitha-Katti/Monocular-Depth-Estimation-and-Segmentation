@@ -187,13 +187,67 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       * Dice- Coefficient - 2*area of intersection/ area of union(more like a f1 score)
       * Decided to go with dice coefficient. Since both are almost same.
       
- # **Performance**
- 
- # **Results**
+ # **Implementation**
+   1. **Mask** 
+       * Model - Unet
+       * Parameters - 4....M
+       * Scheduler - Adam
+       * Loss - Dice loss , BCE
+       * Total No Of Epochs trained for - 10
+       * Total No of data used - 80k(1 set)
+       * Results
+       * Inference
+   2. **Depth**
+      * Model - Unet
+      * Parameters -
+      * Optimiser
+      * Scheduler -
+      * Loss - BCE, SSIM, RMSProp
+      * Total No of Epochs trained for - 10
+      * Total number of data used - 80k (1 set)
+      * Inference
+      
+   3. **Combine model**
+      1. Attempt 1
+         * Model
+         * Parametes count
+         * Scheduler
+         * Loss
+         * Total NoEpochs trained for -
+         * Total data used - 400k
+         * Inference 
+      2. Attempt 2
+         * Model
+         * Parametes count
+         * Scheduler
+         * Loss
+         * Total NoEpochs trained for -
+         * Total data used - 400k
+         * Inference  
+      3. Attempt 3
+         * Model
+         * Parametes count
+         * Scheduler
+         * Loss
+         * Total NoEpochs trained for -
+         * Total data used - 400k
+         * Inference
+         
+ # **Some Part Of Code Explaination**
  
  # **Future Work**
+ * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
+ * Tried only for adam, should try for other optimisers. Once tried for **SGD with one cycle LR** but the results were like ultrascans. So left it
+ * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
+ * The evaluation metrics(Dice Coefficient) used is not giving appropriate results. They are in the range of 0.00's which is not at all good. Should find better evalation metric or should modify that only to give good results.
+ * Tried only with ReduceLr and Step Lr Schedulers. It may work well with super convergence with correct hyperparameters.
  
  # **Key Learnings**
+ * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated with it.
+ * There are  2 fields while dealing the problem statement. Both are very important.
+  1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
+  2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
+ * Documentation. This is very important part. This is for us and others to understand our code.
  
  # **References**
 
