@@ -207,7 +207,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       * Total number of data used - 80k (1 set)
       * Inference
       
-   3. **Combine model**
+   3. **Combined model**
       1. Attempt 1
          * Model
          * Parametes count
@@ -241,6 +241,8 @@ The goal of depth estimation is to obtain a representation of the spatial struct
  * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
  * The evaluation metrics(Dice Coefficient) used is not giving appropriate results. They are in the range of 0.00's which is not at all good. Should find better evalation metric or should modify that only to give good results.
  * Tried only with ReduceLr and Step Lr Schedulers. It may work well with super convergence with correct hyperparameters.
+ * Model can be better. Since it is split at early stage, it will not much useful to combine the model. It may be better to use **1 encoder 2 Decoder like architecture**.
+ * Not used much of transformations.Using the correct transformations make the model to train better.
  
  # **Key Learnings**
  * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated with it.
@@ -248,6 +250,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
     1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
     2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
  * Documentation. This is very important part. This is for us and others to understand our code.
+ * Hyper Parameters tunning is very hard. Can't tune all of them. Some knowledge should be there to know which to keep and which to eliminate at early stages.
  
  # **References**
 
