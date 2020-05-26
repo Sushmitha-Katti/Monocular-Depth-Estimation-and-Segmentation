@@ -126,7 +126,8 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       * This is the architecture of U-Net
       
       * Used Adam as optimiser, reduce lr on pleateau as scheduler. Trained for 1 set of dataset(80k). The results were good. SO thought of continuing with this only.
-    2. **Depth**
+      
+   2. **Depth**
     
        * Since results for mask was good, tried U-Net architecture thought of trying same network for depth also
        * Only thing I changed was target in data preparation
@@ -177,6 +178,14 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       * IOU - area of intersection/area of union
       * Dice- Coefficient - 2*area of intersection/ area of union(more like a f1 score)
       * Decided to go with dice coefficient. Since both are almost same.
+      
+ # **Performance**
+ 
+ # **Results**
+ 
+ # **Future Work **
+ 
+ # **Key Learnings**
       
       
   
