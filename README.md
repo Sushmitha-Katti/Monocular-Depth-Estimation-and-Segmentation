@@ -30,7 +30,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
  So we now got the problem statement. Lets work on it.
  
  # :small_orange_diamond: **Data Collection and Preprocessing**
-  Data is like a fuel in AI/ML. Without it nothing happens. Took 1000 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
+  Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
   For more info can refer this link. Detail Explaination is provided there.
   
