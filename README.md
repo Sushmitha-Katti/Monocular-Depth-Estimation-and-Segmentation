@@ -245,8 +245,8 @@ The goal of depth estimation is to obtain a representation of the spatial struct
  # **Key Learnings**
  * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated with it.
  * There are  2 fields while dealing the problem statement. Both are very important.
-  1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
-  2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
+    1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
+    2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
  * Documentation. This is very important part. This is for us and others to understand our code.
  
  # **References**
