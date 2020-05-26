@@ -21,11 +21,11 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 
   
     
-Interesting!But why do we need to build it? What is its use?
+Interesting! But why do we need to build it? What is its use?
 
-The goal of depth estimation is to obtain a representation of the spatial structure of a scene, recovering the three-dimensional shape and appearance of objects in imagery.
+> The goal of depth estimation is to obtain a representation of the spatial structure of a scene, recovering the three-dimensional shape and appearance of objects in imagery.
 
- Mask detection hepls in removal of background, its main use in medical field where we can use detect the tumereous cells, etc...
+> Mask detection hepls in removal of background, its main use in medical field where we can use detect the tumereous cells, etc...
  
  So we now got the problem statement. Lets work on it.
  
