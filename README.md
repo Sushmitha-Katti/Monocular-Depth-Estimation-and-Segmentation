@@ -209,4 +209,4 @@ The goal of depth estimation is to obtain a representation of the spatial struct
   
 
 
-## This is just a gist. Will document the whole process shortly.
+
