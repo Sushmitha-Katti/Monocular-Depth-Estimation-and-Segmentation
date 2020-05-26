@@ -17,6 +17,8 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 
 **"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"**
 
+[problem](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg)
+
   
     
 Interesting!But why do we need to build it? What is its use?
