@@ -68,9 +68,9 @@ The goal of depth estimation is to obtain a representation of the spatial struct
        * The data need to be in the form which model accepts.
        * So it should undergo transformation.
        * Used **Albumentation** for transformation.
-        * Resize - Image size was 224 x 224. But if we load the image like this only then it requires lot of memory and processing will also be slow. So Resized to 64 x 64.
-        * Normalisation - To bring all images to same scale
-        * To Tensor - Convert all images to tensor.
+         * Resize - Image size was 224 x 224. But if we load the image like this only then it requires lot of memory and processing will also be slow. So Resized to 64 x 64.
+         * Normalisation - To bring all images to same scale
+         * To Tensor - Convert all images to tensor.
     
        *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
