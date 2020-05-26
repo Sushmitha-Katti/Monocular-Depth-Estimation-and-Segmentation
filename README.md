@@ -15,7 +15,7 @@
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
-    **Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output.** 
+   **Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output** 
     
 Interesting!But why do we need to build it? What is its use?
 
@@ -41,9 +41,9 @@ The goal of depth estimation is to obtain a representation of the spatial struct
   
   Now our data is ready. But we can't send it directly to the model. It should be  in the form that model takes it.
   
-  Since data is spread across 5 zip folders. Needed a stratergy to extract all of them.
+  1. **Since data is spread across 5 zip folders. Needed a stratergy to extract all of them.**
 
-"""
+
           def extract_data(no_of_set = 1):
             if(no_of_set > 6 or no_of_set < 1):
               print('No of sets should be not be less that 1 and greater that 6')
@@ -52,13 +52,31 @@ The goal of depth estimation is to obtain a representation of the spatial struct
               start = time.time()
               if (os.path.isdir("data_"+str(i))):
                   print (f'Imagesof set {i} already downloaded...')
+                  
               else:
-
-        archive = zipfile.ZipFile(f'/content/gdrive/My Drive/Mask_Rcnn/Dataset/data_part{str(i)}.zip')
-        archive.extractall()
-      end = time.time()
-    print(f"data set extraction took {round(end-start,2)}s") """
+                    archive = zipfile.ZipFile(f'/content/gdrive/My Drive/Mask_Rcnn/Dataset/data_part{str(i)}.zip')
+                    archive.extractall()
+                  end = time.time()
+                print(f"data set extraction took {round(end-start,2)}s") 
+  We just need to give how many we need to extract. It extracts all.
   
+ **Advantages of zipping in 5 sets**
+ * Zip file may be corrupted if we zip whole data in single file
+ * If we want to play around with the data we can extract 1 or 2 sets instead of extracting whole data.
+ 
+ 2. **Data transformation and data loading**
+  * The data need to be in the form which model accepts.
+  * So it should undergo transformation.
+  * Used **Albumentation** for transformation**
+    * Resize - Image size was 224 x 224. But if we load the image like this only then it requires lot of memory and processing will also be slow. So Resized to 64 x 64.
+    * Normalisation - To bring all images to same scale
+    * To Tensor - Convert all images to tensor.
+    
+    **Couldn't use much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image**
+  
+ 
+ 
+ 
   
 
 
