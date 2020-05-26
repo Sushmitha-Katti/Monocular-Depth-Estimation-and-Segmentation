@@ -105,6 +105,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
 # **Model Selection**
     
    This is the interesting part. It poses lot of questions.
+   
      * Which model to chose?
      * How to combine both models?
      * Till now we had labels as 0,1,2..... But now mask and depth.
