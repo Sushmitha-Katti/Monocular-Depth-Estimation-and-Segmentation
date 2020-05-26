@@ -1,7 +1,7 @@
  <p align="center"><img src ="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/title.png"></p>
 
 ## For any AI/ML problem there will be some generic steps to perform.
-1. Probelm statement.
+1. Problem statement.
 2. Data Collection and preprocessing
 3. Model Selection
 4. Model Evaluation
