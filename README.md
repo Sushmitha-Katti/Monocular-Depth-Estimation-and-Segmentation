@@ -11,16 +11,16 @@
 **We will go step by step**
 
 
-<h1><u><b>**Problem Statement**</b></u></h1>
+<h1><u><b>Problem Statement</b></u></h1>
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
-
-|> "Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"|         
-|                                                                                                                              |
-|<p align="center">                                                                                                            |
-|  <img  src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg">  |
-|</p>                                                                                                                          |
-|------------------------------------------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------------------------------------|
+| > "Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"|       
+|                                                                                                                               |
+|<p align="center">                                                                                                             |
+|  <img  src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg">   |
+|</p>                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------------ |
   
     
 Interesting!But why do we need to build it? What is its use?
