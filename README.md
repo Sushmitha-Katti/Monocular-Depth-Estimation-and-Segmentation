@@ -1,4 +1,4 @@
- # Monocular-Depth-Estimation-and-Segmentation 
+ <h1 align="center"><b>Monocular-Depth-Estimation-and-Segmentation</b></h1>
 
 ## For any AI/ML problem there will be some generic steps to perform.
 1. Probelm statement.
