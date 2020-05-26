@@ -135,15 +135,52 @@ The goal of depth estimation is to obtain a representation of the spatial struct
     ***After that I realised that this Neural Networks are really crazy. They learn whatever we make them learn***
     
    3. **Combined model**
+   
        **Question Posed**
        1. How to combine the model? 
        2. If we combine also how to make them learn? NN's will learn form backpropogation. Which loss can we backpropogate? Which weights to consider. Both targets should have different weights to learn
        
        Started searching for the answeres. Finally I learnt that 
        * we can split the model at somewhere in middle. By that it will learn both targets will be same. After that it will have different learning paths to optimise for specifically for that target.
-       * Since every pass will be acumilated by gradients, by using backward, those gradients will only be backwarded. So we can use weighted loss function for backward.
-       I used
+       * Since every pass will be acumilated by gradients, by using backward, those gradients will only be backwarded. So we can use weighted loss function for backward
+       
+       
                  '''torch.backward.autograd([loss_1, loss_2])'''
+                 
+         So this is how the final model looks like
+         
+         1. Model Picture
+         2. Model Parameters Count
+         
+         **Areas of Improvement**
+         
+           1. I have split the model at the very begining as soon as 2 convolution. 
+           2. Could have split after encoding. That may be better.
+         
+         
+# **Model Evaluation**
+   * This was the hardest part I have delt with.
+  
+  **Questions Posed**
+  1. Which loss functions to use for mask and depth?
+  2. Which Optimiser, Scheduler to use?
+  3. How to Evaluate the accuracy? Since we need to compare the whole data. 
+  
+  * There were plenty of loss functions in the papers mentioned. Confused which one to use.
+  * Decided to try with **Binary Cross Entropy with logits** and **Dice Loss** for mask.
+  * **SSIM**,**Binary Cross Entropy with logits**, **RMSloss** for depth.
+  * I learnt that for segmentations, depth kind of problems 'ADAM' , 'RMSPROP' would be better. I decided to stick to ADAM.
+  * For Accuarcy there is no single method is bethod. 
+    * Came across Pixel wise Comparision, IOU, Dice Coefficient methods.
+    * The disadvantage of Pixel wise Comparision is, it compared pixel wise. Most of the time pixel values will not be same, it doesn't give the better accuracy.
+    * Remaining IOU and dice Co-efficient. 
+      * IOU - area of intersection/area of union
+      * Dice- Coefficient - 2*area of intersection/ area of union(more like a f1 score)
+      * Decided to go with dice coefficient. Since both are almost same.
+      
+      
+  
+   
        
        
 
