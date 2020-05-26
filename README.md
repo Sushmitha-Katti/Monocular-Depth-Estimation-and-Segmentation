@@ -11,7 +11,7 @@
 **We will go step by step**
 
 
-# :small_orange_diamond: **Problem Statement**
+# __**Problem Statement**
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
