@@ -61,8 +61,9 @@ The goal of depth estimation is to obtain a representation of the spatial struct
    We just need to give how many we need to extract. It extracts all.
   
    **Advantages of zipping in 5 sets**
-        * Zip file may be corrupted if we zip whole data in single file
-        * If we want to play around with the data we can extract 1 or 2 sets instead of extracting whole data.
+   
+   * Zip file may be corrupted if we zip whole data in single file
+   * If we want to play around with the data we can extract 1 or 2 sets instead of extracting whole data.
  
  2. **Data transformation and data loading**
        * The data need to be in the form which model accepts.
@@ -80,6 +81,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
           2. Then split it according to the givene ratio. By default it is 70:30
           3. Input each subset for transformation. 
           4. Return
+          
           Syntax
                           
               RawDataSet(train_split = 70,test_transforms = None,train_transforms = None, set_no=1, url_path ='None', whole_data = True )
