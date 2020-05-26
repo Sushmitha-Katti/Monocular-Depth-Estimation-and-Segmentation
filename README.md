@@ -11,13 +11,13 @@
 **We will go step by step**
 
 
-<h1><u>Problem Statement</u></h1>
+# :small_orange_diamond: **Problem Statement**
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
 |  "Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output" |
 |-------------------------------------------------------------------------------------------------------------------------------|
-<p align="center"><img  src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg"></p> | |  
+<p align="center"><img  src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg"></p> 
 
   
     
