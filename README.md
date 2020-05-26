@@ -19,7 +19,7 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg">
+  <img  src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg">
 </p>
 
   
