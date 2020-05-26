@@ -138,7 +138,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
        * Only thing I changed was target in data preparation
        * After seeing the results I was amazed. It was predicting depth also(not a good results though)
        
-    > After that I realised that this Neural Networks are really crazy. They learn whatever we make them learn
+   > After that I realised that this Neural Networks are really crazy. They learn whatever we make them learn
     
    3. **Combined model**
    
