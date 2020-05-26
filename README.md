@@ -25,8 +25,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
  
  So we now got the problem statement. Lets work on it.
  
-
-# **Data Preparation**
+ # **Data Preparation**
   Data is like a fuel in AI/ML. Without it nothing happens. Took 1000 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
   For more info can refer this link. Detail Explaination is provided there.
@@ -58,7 +57,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
                     archive.extractall()
                   end = time.time()
                 print(f"data set extraction took {round(end-start,2)}s") 
-   We just need to give how many we need to extract. It extracts all.
+   We just need to give how many sets we need to extract. It only extract that much.That number should be between 1 to 5
   
    **Advantages of zipping in 5 sets**
    
@@ -75,11 +74,13 @@ The goal of depth estimation is to obtain a representation of the spatial struct
     
        *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
-       * **Bringing it to dataset formaat**[Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py)
+       * **Bringing it to dataset formaat** [Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py)
        
-          1. Convert the whole data to raw data.
+          1. Convert the whole data to raw data which gives 4 outputs path of bg, fg-bg, mask depth. Bg was something different to deal with. Since it was not in zip and had only 100 images. It is spread accros each set. Simple trick to get it was to use ciel function
+          
+             *Each bg was spred around 800 fg-bg's. So we can use ciel(fg-bg_img_no/800). This gave a perfect result.*
           2. Then split it according to the givene ratio. By default it is 70:30
-          3. Input each subset for transformation. 
+          3. Input each subset for transformation. Here both fg-bg and bg is concatenated to 1 image of 6 Channels 
           4. Return
           
           Syntax
@@ -87,6 +88,71 @@ The goal of depth estimation is to obtain a representation of the spatial struct
               RawDataSet(train_split = 70,test_transforms = None,train_transforms = None, set_no=1, url_path ='None', whole_data = True )
              * whole_data - do all these for complete data. This is considered as priority. If it is false. Then look for url path and set_no
              * set_no - Do this for specific data, out of 5 sets.
+             
+      * After this passed the returned values(traindata, testdata) to dataloader. This is the usual code as we use for any data loaders.
+      [click here for the code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/train_test_loader.py)
+      
+      
+      Now the data is ready to go into the model. But which model? Will see in next section.
+      
+# **Model Selection**
+    
+   This is the interesting part. It poses lot of questions.
+     * Which model to chose?
+     * How to combine both models?
+     * Till now we had labels as 0,1,2..... But now mask and depth.
+     * How the model should be? How to convert object recognised model to mask and depth models?
+     
+   Till now we mostly delt with object recognisation. But now masks and segments. Thought that there may be complicated models designed for these problems. Started reading papers about mask and depth. Now broke the problem into 2 parts.
+   
+   1. Mask
+   2. Depth.
+   
+   First we need to write a model to do seperate tasks, then we can think of combinig.
+   
+   1. **Mask** - 
+   
+      **Attempt 1**
+       * Started with the **resent18** architecture. 
+       * Removed avg pooling and fc layer. 
+       * Since we should have input and output same size. The simple option I found was to make padding = 1
+       * That was the disaster. Cuda out of Memory!
+       * Since padding = 1 Every layer will have 64 x 64, which makes processing slower and takes lot of memory. Then I realised not only parameter count, memory storage, forward/ backward pass memory also matters.
+       
+       **Attempt 2**
+       
+       * In many papers, arcticles I read, lot were focusing on U-Net(Sounds something different). Started studing more of it. This model performed better for segmentation. This follows encoder-decoder architecture. So may be memory/storage and all will be less.It is also inspired from resnet. Will have many receptive fields. 
+       
+      * This is the architecture of U-Net
+      
+      * Used Adam as optimiser, reduce lr on pleateau as scheduler. Trained for 1 set of dataset(80k). The results were good. SO thought of continuing with this only.
+    2. **Depth**
+    
+       * Since results for mask was good, tried U-Net architecture thought of trying same network for depth also
+       * Only thing I changed was target in data preparation
+       * After seeing the results I was amazed. It was predicting depth also(not a good results though)
+       
+    ***After that I realised that this Neural Networks are really crazy. They learn whatever we make them learn***
+    
+   3. **Combined model**
+       **Question Posed**
+       1. How to combine the model? 
+       2. If we combine also how to make them learn? NN's will learn form backpropogation. Which loss can we backpropogate? Which weights to consider. Both targets should have different weights to learn
+       
+       Started searching for the answeres. Finally I learnt that 
+       * we can split the model at somewhere in middle. By that it will learn both targets will be same. After that it will have different learning paths to optimise for specifically for that target.
+       * Since every pass will be acumilated by gradients, by using backward, those gradients will only be backwarded. So we can use weighted loss function for backward.
+       I used
+                 '''torch.backward.autograd([loss_1, loss_2])'''
+       
+       
+
+       
+       
+   
+     
+
+      
           
   
  
