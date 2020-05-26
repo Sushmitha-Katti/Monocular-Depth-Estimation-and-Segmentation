@@ -11,7 +11,7 @@
 **We will go step by step**
 
 
-# **Problem Statement**
+# :small_orange_diamond: **Problem Statement**
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
@@ -31,7 +31,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
  
  So we now got the problem statement. Lets work on it.
  
- # **Data Preparation**
+ # :small_orange_diamond: **Data Collection and Preprocessing**
   Data is like a fuel in AI/ML. Without it nothing happens. Took 1000 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
   For more info can refer this link. Detail Explaination is provided there.
@@ -101,7 +101,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       
       Now the data is ready to go into the model. But which model? Will see in next section.
       
-# **Model Selection**
+# :small_orange_diamond: **Model Selection**
     
    This is the interesting part. It poses lot of questions.
    
@@ -166,7 +166,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
            2. Could have split after encoding. That may be better.
          
          
-# **Model Evaluation**
+# :small_orange_diamond: **Model Evaluation**
    * This was the hardest part I have delt with.
   
   **Questions Posed**
@@ -186,7 +186,7 @@ The goal of depth estimation is to obtain a representation of the spatial struct
       * Dice- Coefficient - 2*area of intersection/ area of union(more like a f1 score)
       * Decided to go with dice coefficient. Since both are almost same.
       
- # **Implementation**
+ # :small_orange_diamond: **Implementation**
    1. **Mask** 
        * Model - Unet
        * Parameters - 4....M
@@ -232,23 +232,23 @@ The goal of depth estimation is to obtain a representation of the spatial struct
          * Total data used - 400k
          * Inference
          
- # **Some Part Of Code Explaination**
+ # :small_orange_diamond: **Code Explaination**
  
- # **Future Work**
+ # :small_orange_diamond: **Future Work**
  * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
  * Tried only for adam, should try for other optimisers. Once tried for **SGD with one cycle LR** but the results were like ultrascans. So left it
  * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
  * The evaluation metrics(Dice Coefficient) used is not giving appropriate results. They are in the range of 0.00's which is not at all good. Should find better evalation metric or should modify that only to give good results.
  * Tried only with ReduceLr and Step Lr Schedulers. It may work well with super convergence with correct hyperparameters.
  
- # **Key Learnings**
+ # :small_orange_diamond: **Key Learnings**
  * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated.
  * There are  2 fields while dealing the problem statement. Both are very important.
     1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
     2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
  * Documentation. This is very important part. This is for us and others to understand our code.
  
- # **References**
+ # :small_orange_diamond: **References**
 
  
       
