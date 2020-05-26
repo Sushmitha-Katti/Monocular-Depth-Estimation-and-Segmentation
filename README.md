@@ -74,16 +74,17 @@ The goal of depth estimation is to obtain a representation of the spatial struct
     
        *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
-       **Bringing it to dataset formaat**[Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py)
+       * **Bringing it to dataset formaat**[Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py)
+       
           1. Convert the whole data to raw data.
           2. Then split it according to the givene ratio. By default it is 70:30
           3. Input each subset for transformation. 
           4. Return
           Syntax
                           
-         RawDataSet(train_split = 70,test_transforms = None,train_transforms = None, set_no=1, url_path ='None', whole_data = True )
-         * whole_data - do all these for complete data. This is considered as priority. If it is false. Then look for url path and set_no
-         * set_no - Do this for specific data, out of 5 sets.
+              RawDataSet(train_split = 70,test_transforms = None,train_transforms = None, set_no=1, url_path ='None', whole_data = True )
+             * whole_data - do all these for complete data. This is considered as priority. If it is false. Then look for url path and set_no
+             * set_no - Do this for specific data, out of 5 sets.
           
   
  
