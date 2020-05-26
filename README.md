@@ -1,4 +1,4 @@
- <p align="center">![title](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/title.png)</p>
+ <p align="center"><img src ="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/title.png"></p>
 
 ## For any AI/ML problem there will be some generic steps to perform.
 1. Probelm statement.
