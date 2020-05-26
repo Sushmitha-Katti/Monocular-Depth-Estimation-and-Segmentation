@@ -32,7 +32,7 @@ Interesting! But why do we need to build it? What is its use?
  # :small_orange_diamond: **Data Collection and Preprocessing**
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
-  For more info can refer this link. Detail Explaination is provided there.
+  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14). Detail Explaination is provided there.
   
   Finally we had
   * Foreground Images - 100
@@ -75,6 +75,8 @@ Interesting! But why do we need to build it? What is its use?
          * Resize - Image size was 224 x 224. But if we load the image like this only then it requires lot of memory and processing will also be slow. So Resized to 64 x 64.
          * Normalisation - To bring all images to same scale
          * To Tensor - Convert all images to tensor.
+         
+         
     
       > *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
