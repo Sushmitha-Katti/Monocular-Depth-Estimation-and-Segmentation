@@ -15,7 +15,7 @@
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
-**"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"**
+<p align="center"><bold>"Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output"</bold></p>
 
 
 <p align="center">
