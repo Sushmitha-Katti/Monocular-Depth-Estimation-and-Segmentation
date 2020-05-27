@@ -48,7 +48,7 @@ Below are the results of applying different loss functions. First Row Correspond
 2. From above we can see that BCEwithLogitLoss is giving good results than compared to other.
 3. But BCEwithLogitLoss images are not sharp. It is more smooth, where as SSIM detects edges, gradients in a better way.
 4. RMSE images are very blurry.
-5. Thought the combination Of SSIM and BCEWithLogitLoss work well. But didnot get good results. May be, the weights used in not propere. Took 1:2 ratio. This can be fine tuned to get better results.
+5. Thought the combination Of SSIM and BCEWithLogitLoss work well. But did not get good results. May be, the weights used in not proper. Took 1:2 ratio. This can be fine tuned to get better results.
 6. By all these results, for combined model chose BCEwithLogit Loss and SSIM Loss Function to play around.
 
 ## **Links for Code Implementation**
