@@ -65,8 +65,8 @@ For **i** and **ii**, I used similar loss function. But what is the difference.
   
 ## **Inference**
 
-1. From the above result **iii** method i.e BCEwithLogitLoss for mask and SSIM for depth is ruled out.
-2. BCEwithLogit Loss will be good for both.
+1. From the above result, method **iii** i.e BCEwithLogitLoss for mask and SSIM for depth is ruled out.
+2. BCEwithLogitLoss will be good for both depth and mask
 3. There is not much difference in **i** and **ii**. We can go with anyone. 
 
 ## **Links for Code Implementation**
