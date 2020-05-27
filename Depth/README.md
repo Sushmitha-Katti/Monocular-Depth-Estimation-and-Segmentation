@@ -25,6 +25,7 @@
 * Loss Functions : SSIM, BCEwithLogitLoss, SSIM+BCE, RMS
 * Total Epochs : 10
 * LR : 0.01
+* Evaluation Metrics : Dice Coefficient.
 
 
 ## **Results**
