@@ -27,9 +27,11 @@ Model
 * LR : 0.01
 
 **Results**
+
 Below are the results of applying different loss functions.
+
 i --> BCEwithLogit Loss ii --> RMSE   iii ---> SSIM+BCE  iv --> SSIM
-<p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
+<p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
   
 
 
