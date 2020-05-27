@@ -35,9 +35,9 @@ Below are the results of applying different loss functions. First Row Correspond
 
 **ii** --> RMSE    (Root Mean Square Loss)
 
-**iii** ---> SSIM+BCEwithLogitLoss ( 1 x BCEwithLogitLoss + 2 xSSIM ) This is taken from torchgeometry library
+**iii** ---> SSIM+BCEwithLogitLoss ( 1 x BCEwithLogitLoss + 2 xSSIM ) 
 
-**iv** --> SSIM (Structural Similarity loss - compares local region of target pixel between reconstructed and original images)
+**iv** --> SSIM (Structural Similarity loss - compares local region of target pixel between reconstructed and original images).SSIM is taken from torchgeometry library
 
 <p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
 <p align = "center">To View the images properly click on the image</p>
