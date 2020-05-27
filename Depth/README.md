@@ -1,6 +1,6 @@
 # **Depth Prediction**
 
-Model
+## **Model**
 
 
 <p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/unet-depth.png"></p>
@@ -35,11 +35,12 @@ Below are the results of applying different loss functions. First Row Correspond
 
 **ii** --> RMSE    (Root Mean Square Loss)
 
-**iii** ---> SSIM+BCEwithLogitLoss ( 1 x BCEwithLogitLoss + 2 xSSIM )
+**iii** ---> SSIM+BCEwithLogitLoss ( 1 x BCEwithLogitLoss + 2 xSSIM ) This is taken from torchgeometry library
 
 **iv** --> SSIM (Structural Similarity loss - compares local region of target pixel between reconstructed and original images)
 
 <p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
+<p align = "center">To View the images properly right click the image</p>
   
 ## **Inference**
 
@@ -49,7 +50,13 @@ Below are the results of applying different loss functions. First Row Correspond
 4. RMSE images are very blurry.
 5. Thought the combination Of SSIM and BCEWithLogitLoss work well. But didnot get good results. May be, the weights used in not propere. Took 1:2 ratio. This can be fine tuned to get better results.
 6. By all these results, for combined model chose BCEwithLogit Loss and SSIM Loss Function to play around.
-6
+
+## **Links for Code Implementation**
+1. BCEwithLogitLoss
+2. RMSE
+3. SSIM+BCE
+4. SSIM
+5. Implentation of Loss functions
   
 
 
