@@ -36,7 +36,7 @@ Displays the results and save them. Here name refers to title of image.
 
     dice_coefficient(pred, target, mask=False):
     
-    Gives the dice coefficient
+ Gives the dice coefficient
 
     plot_curve(curves,title,Figsize = (7,7)):
 
