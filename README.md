@@ -11,7 +11,7 @@
 **We will go step by step**
 
 
-# :small_orange_diamond: **Problem Statement**:dart:
+# **Problem Statement**:dart:
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
@@ -29,7 +29,7 @@ Interesting! But why do we need to build it? What is its use?
  
  So we now got the problem statement. Lets work on it.
  
- # :small_orange_diamond: **Data Collection and Preprocessing**
+ # **Data Collection and Preprocessing**:mag_right:
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
   For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14/?target=_blank). Detail Explaination is provided there.
@@ -103,7 +103,7 @@ Interesting! But why do we need to build it? What is its use?
       
       Now the data is ready to go into the model. But which model? Will see in next section.
       
-# :small_orange_diamond: **Model Selection**
+# **Model Selection** :mag_right:
     
    This is the interesting part. It poses lot of questions.
    
@@ -157,7 +157,7 @@ Interesting! But why do we need to build it? What is its use?
        
                  '''torch.backward.autograd([loss_1, loss_2])'''
                       
-# :small_orange_diamond: **Model Evaluation**
+# **Model Evaluation**:test_tube:
    * This was the hardest part I have delt with.
   
   **Questions Posed**
@@ -177,7 +177,7 @@ Interesting! But why do we need to build it? What is its use?
       * Dice- Coefficient - 2*area of intersection/ area of union(more like a f1 score)
       * Decided to go with dice coefficient. Since both are almost same.
       
- # :small_orange_diamond: **Implementation**
+ # **Implementation 👨‍💻**
    1. **Mask** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Mask)
        * Model - Unet
        * Parameters - 4,321,473
@@ -207,23 +207,24 @@ Interesting! But why do we need to build it? What is its use?
        * Total number of data used - 400K(whole data)
      
          
- # :small_orange_diamond: **Code Explaination** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
+ # **Code Explaination**:man_teacher:
+ [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
  
- # :small_orange_diamond: **Future Work**
+ # **Future Work:globe_with_meridian**
  * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
  * Tried only for adam, should try for other optimisers. Once tried for **SGD with one cycle LR** but the results were like ultrascans. So left it
  * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
  * The evaluation metrics(Dice Coefficient) used is not giving appropriate results. They are in the range of 0.00's which is not at all good. Should find better evalation metric or should modify that only to give good results.
  * Tried only with ReduceLr and Step Lr Schedulers. It may work well with super convergence with correct hyperparameters.
  
- # :small_orange_diamond: **Key Learnings**
+ # **Key Learnings**:man_student:
  * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated.
  * There are  2 fields while dealing the problem statement. Both are very important.
     1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
     2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
  * Documentation. This is very important part. This is for us and others to understand our code.
  
- # :small_orange_diamond: **References**
+ # **References**:books:
 
  
       
