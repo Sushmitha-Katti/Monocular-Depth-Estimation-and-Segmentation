@@ -154,18 +154,7 @@ Interesting! But why do we need to build it? What is its use?
        
        
                  '''torch.backward.autograd([loss_1, loss_2])'''
-                 
-         So this is how the final model looks like
-         
-         1. Model Picture
-         2. Model Parameters Count
-         
-         **Areas of Improvement**
-         
-           1. I have split the model at the very begining as soon as 2 convolution. 
-           2. Could have split after encoding. That may be better.
-         
-         
+                      
 # :small_orange_diamond: **Model Evaluation**
    * This was the hardest part I have delt with.
   
@@ -189,48 +178,32 @@ Interesting! But why do we need to build it? What is its use?
  # :small_orange_diamond: **Implementation**
    1. **Mask** 
        * Model - Unet
-       * Parameters - 4....M
-       * Scheduler - Adam
+       * Parameters - 4,321,473
+       * Optimiser - Adam
+       * Scheduler - Reduce Lr On Pleateau
        * Loss - Dice loss , BCE
        * Total No Of Epochs trained for - 10
        * Total No of data used - 80k(1 set)
-       * Results
-       * Inference
+  
    2. **Depth**
       * Model - Unet
-      * Parameters -
-      * Optimiser
-      * Scheduler -
-      * Loss - BCE, SSIM, RMSProp
-      * Total No of Epochs trained for - 10
-      * Total number of data used - 80k (1 set)
-      * Inference
+      * Parameters - 4,367,937
+      * Optimiser - Adam
+      * Scheduler - Reduce Lr
+      * Loss - BCE, SSIM, RMSProp, BCE+SSIM
+      * Total No of Epochs trained for-10
+      * Total number of data used - 80k(1 set)
+    
       
-   3. **Combine model**
-      1. Attempt 1
-         * Model
-         * Parametes count
-         * Scheduler
-         * Loss
-         * Total NoEpochs trained for -
-         * Total data used - 400k
-         * Inference 
-      2. Attempt 2
-         * Model
-         * Parametes count
-         * Scheduler
-         * Loss
-         * Total NoEpochs trained for -
-         * Total data used - 400k
-         * Inference  
-      3. Attempt 3
-         * Model
-         * Parametes count
-         * Scheduler
-         * Loss
-         * Total NoEpochs trained for -
-         * Total data used - 400k
-         * Inference
+   3. **Combined model**
+   
+       * Parameters - 8,678,274
+       * Optimiser - Adam
+       * Scheduler - Reduce Lr, Step Lr
+       * Loss - BCE, SSIM
+       * Total No of Epochs trained for - 10(max)
+       * Total number of data used - 400K(whole data)
+     
          
  # :small_orange_diamond: **Code Explaination**
  
