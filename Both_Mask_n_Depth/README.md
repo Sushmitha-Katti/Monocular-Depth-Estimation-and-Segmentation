@@ -60,10 +60,10 @@ Below are the results of applying different loss functions.
    
    > Questions Posed are
    When resuming training for next set what should be the learning rate? Should it continue from where it stoped or start with the initial learning rate that was chosen for previous set.
-   
-      So to answer this question I tried both ways. For some sets I have contined where the LR stopped. For some I took as it was for initialised for previous one.
-   
-      If we start from where lr stopped previous, we may decay the LR. This is the the new set, the inital LR may be the better idea.
+   >
+   > So to answer this question I tried both ways. For some sets I have contined where the LR stopped. For some I took as it was for initialised for previous one.
+   >
+   >  If we start from where lr stopped previous, we may decay the LR. This is the the new set, the inital LR may be the better idea.
 
 
   
