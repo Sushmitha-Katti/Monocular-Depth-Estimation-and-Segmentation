@@ -98,6 +98,8 @@ Interesting! But why do we need to build it? What is its use?
       * After this passed the returned values(traindata, testdata) to dataloader. This is the usual code as we use for any data loaders.
       [click here for the code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/train_test_loader.py)
       
+      ![Sample Input](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/input.jpg)
+      
       
       Now the data is ready to go into the model. But which model? Will see in next section.
       
