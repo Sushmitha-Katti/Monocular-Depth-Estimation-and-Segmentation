@@ -89,12 +89,6 @@ Interesting! But why do we need to build it? What is its use?
           2. Then split it according to the givene ratio. By default it is 70:30
           3. Input each subset for transformation. Here both fg-bg and bg is concatenated to 1 image of 6 Channels 
           4. Return
-          
-          Syntax
-                          
-              RawDataSet(train_split = 70,test_transforms = None,train_transforms = None, set_no=1, url_path ='None', whole_data = True )
-             * whole_data - do all these for complete data. This is considered as priority. If it is false. Then look for url path and set_no
-             * set_no - Do this for specific data, out of 5 sets.
              
       * After this passed the returned values(traindata, testdata) to dataloader. This is the usual code as we use for any data loaders.
       [click here for the code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/train_test_loader.py)
