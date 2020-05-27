@@ -23,37 +23,43 @@ Converts the raw data to data set format. It takes the whole and convert into da
 Here we can state for how many data we need to do. That is given by whole_data. If this is true. All the 5 sets are included. Else it checks set_no and base url(url_path) and converts only that set.
 
 <pre>
+    UNet(n_channels = 6,n_classes = 1): <a href = "https://github.com/Sushmitha-Katti/PyTNet/blob/master/Models/MaskDepthModel.py">Code</a>
+</pre>
+
+Mask and Depth Estimation Model
+
+<pre>
     load(trainset,testset,seed=1,batch_size=128,num_workers=4,pin_memory=True): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/train_test_loader.py" title="Extract">Code</a>
 </pre>
 
 loads the data using data loader according to batch size.
 
-</pre>
+<pre>
     show_sample_data(trainloader): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/show_images.py" title="Extract">Code</a>
  </pre>
 
 Displays sample input and target data
 
-</pre>
+<pre>
     train_model(model,device,trainloader,testloader,optimizer,mask_criterion, depth_criterion,EPOCHS,scheduler = False,batch_scheduler = False ,best_loss = 1000,path = "/content/gdrive/My Drive/API/bestmodel.pt"): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/Training/train_test_MnD.py" title="Extract">Code</a>
 </pre>
 
  Used to train model. Inturn it calls train and test function, trains the model for specified number of epochs and save the model if its loss is less than the best loss
  
- </pre>
+ <pre>
     show_results(model,testloader,name): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/Results/showMnD.py" title="Extract">Code</a>
   </pre>
 
 Displays the results and save them. Here name refers to title of image.
 
 
-</pre>
+<pre>
     dice_coefficient(pred, target, mask=False): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/evaluation_metrics/accuracy.py" title="Extract">Code</a>
  </pre>
     
  Gives the dice coefficient
  
-</pre>
+<pre>
     plot_curve(curves,title,Figsize = (7,7)): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/evaluate.py" title="Extract">Code</a>
 </pre>
 
