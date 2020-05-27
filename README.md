@@ -217,6 +217,7 @@ Interesting! But why do we need to build it? What is its use?
  * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
  * The evaluation metrics(Dice Coefficient) used is not giving appropriate results. They are in the range of 0.00's which is not at all good. Should find better evalation metric or should modify that only to give good results.
  * Tried only with ReduceLr and Step Lr Schedulers. It may work well with super convergence with correct hyperparameters.
+ * Trained only with images of size 64 x 64. But the actual image size is 224 x 224. Need to follow gradual image size increase startergy and train it for higher resolution images. The results may be even better.
  
  # **Key Learnings**:man_student:
  * Patience is must to deal with AI/ML problems. With lot of disconnections, internet problems, should not be frustrated.
