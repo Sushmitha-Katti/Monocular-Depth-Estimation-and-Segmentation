@@ -80,7 +80,7 @@ Interesting! But why do we need to build it? What is its use?
     
       > *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
-       * **Bringing it to dataset formaat** [Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py)
+       * **Bringing it to dataset formaat** [Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py) 
        
           1. Convert the whole data to raw data which gives 4 outputs path of bg, fg-bg, mask depth. Bg was something different to deal with. Since it was not in zip and had only 100 images. It is spread accros each set. Simple trick to get it was to use ciel function
           
