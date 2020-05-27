@@ -30,9 +30,13 @@ Displays sample input and target data
 
  Used to train model. Inturn it calls train and test function, trains the model for specified number of epochs and save the model if its loss is less than the best loss
  
-    how_results(model,testloader,name):
+    show_results(model,testloader,name):
 
 Displays the results and save them. Here name refers to title of image.
+
+    dice_coefficient(pred, target, mask=False):
+    
+    Gives the dice coefficient
 
     plot_curve(curves,title,Figsize = (7,7)):
 
