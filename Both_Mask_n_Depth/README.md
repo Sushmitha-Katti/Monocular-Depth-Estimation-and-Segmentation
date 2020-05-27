@@ -57,6 +57,7 @@ Below are the results of applying different loss functions.
    * So taking the idea of transfer learning. Trained each set for 10 epochs at once. Saved the best model.
    * Then loaded the best model, and started training for next set.
    <br/>
+   
    > Questions Posed are
    When resuming training for next set what should be the learning rate? Should it continue from where it stoped or start with the initial learning rate that was chosen for previous set.
    
