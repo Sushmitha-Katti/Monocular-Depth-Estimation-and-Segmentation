@@ -31,7 +31,7 @@ Model
 Below are the results of applying different loss functions.
 
 **i** --> BCEwithLogitLoss   **ii** --> RMSE    **iii** ---> SSIM+BCE    **iv** --> SSIM
-<p align = "center"><img height = "700" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
+<p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
   
 
 
