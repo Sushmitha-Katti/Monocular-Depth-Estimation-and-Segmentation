@@ -207,7 +207,7 @@ Interesting! But why do we need to build it? What is its use?
        * Total number of data used - 400K(whole data)
      
          
- # :small_orange_diamond: **Code Explaination**
+ # :small_orange_diamond: **Code Explaination** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
  
  # :small_orange_diamond: **Future Work**
  * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
