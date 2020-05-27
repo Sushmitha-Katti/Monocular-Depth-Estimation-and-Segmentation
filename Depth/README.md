@@ -26,18 +26,30 @@ Model
 * Total Epochs : 10
 * LR : 0.01
 
-**Results**
 
-Below are the results of applying different loss functions.
+## **Results**
 
-**i** --> BCEwithLogitLoss   
+Below are the results of applying different loss functions. First Row Corresponds to Target Depths. Second Row Corresponds to Predicted Depths
 
-**ii** --> RMSE    
+**i** --> BCEwithLogitLoss   (Combination of sigmoid and binary cross entropy loss)
 
-**iii** ---> SSIM+BCE    
+**ii** --> RMSE    (Root Mean Square Loss)
 
-**iv** --> SSIM
+**iii** ---> SSIM+BCEwithLogitLoss ( 1 x BCEwithLogitLoss + 2 xSSIM )
+
+**iv** --> SSIM (Structural Similarity loss - compares local region of target pixel between reconstructed and original images)
+
 <p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth.jpg"</p>
+  
+## **Inference**
+
+1. Above are the results that ran for 10 EPOCHS with 80K dataset. 
+2. From above we can see that BCEwithLogitLoss is giving good results than compared to other.
+3. But BCEwithLogitLoss images are not sharp. It is more smooth, where as SSIM detects edges, gradients in a better way.
+4. RMSE images are very blurry.
+5. Thought the combination Of SSIM and BCEWithLogitLoss work well. But didnot get good results. May be, the weights used in not propere. Took 1:2 ratio. This can be fine tuned to get better results.
+6. By all these results, for combined model chose BCEwithLogit Loss and SSIM Loss Function to play around.
+6
   
 
 
