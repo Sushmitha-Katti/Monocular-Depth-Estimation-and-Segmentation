@@ -178,7 +178,7 @@ Interesting! But why do we need to build it? What is its use?
       * Decided to go with dice coefficient. Since both are almost same.
       
  # :small_orange_diamond: **Implementation**
-   1. **Mask** 
+   1. **Mask** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Mask)
        * Model - Unet
        * Parameters - 4,321,473
        * Optimiser - Adam
@@ -187,7 +187,7 @@ Interesting! But why do we need to build it? What is its use?
        * Total No Of Epochs trained for - 10
        * Total No of data used - 80k(1 set)
   
-   2. **Depth**
+   2. **Depth** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Depth)
       * Model - Unet
       * Parameters - 4,367,937
       * Optimiser - Adam
@@ -197,7 +197,7 @@ Interesting! But why do we need to build it? What is its use?
       * Total number of data used - 80k(1 set)
     
       
-   3. **Combined model**
+   3. **Combined model**  [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Both_Mask_n_Depth)
    
        * Parameters - 8,678,274
        * Optimiser - Adam
