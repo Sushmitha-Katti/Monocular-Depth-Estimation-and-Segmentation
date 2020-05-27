@@ -210,7 +210,7 @@ Interesting! But why do we need to build it? What is its use?
  # **Code Explaination**:man_teacher:
  [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
  
- # **Future Work**:globe_with_meridian:
+ # **Future Work**:crystal_ball:	
  * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
  * Tried only for adam, should try for other optimisers. Once tried for **SGD with one cycle LR** but the results were like ultrascans. So left it
  * Can Try Various loss functions, and their combinations also. Like weighted combination of diceloss and BCEwithlogitloss etc...
