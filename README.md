@@ -210,6 +210,17 @@ Interesting! But why do we need to build it? What is its use?
          
  # **Code Explaination**:man_teacher:
  [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
+       * All the functions and classes are implemented [here] (). This contains each and every modules called.
+       * First Mount the drive
+       * Clone the PytNet repo. Install all necessary library.
+       * Unzip the data
+       * Pass the data RawDataset Function that returns testdataset and traindataset.
+       * Pass the returned data to data loader.
+       * Display some input and target images.
+       * Load tensorboard(if needed). It helps to visualise model, graphs. Model activity is tracked here.
+       * Initialise loss functions and Optimisers
+       * Train the model for some epochs
+       * Visualise the results.
  
  # **Future Work**:crystal_ball:	
  * There is lot of improvisation that can be done here. Because of time constraint couldn't try much.
