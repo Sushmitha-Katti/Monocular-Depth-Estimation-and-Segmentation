@@ -127,7 +127,7 @@ Interesting! But why do we need to build it? What is its use?
        * Removed avg pooling and fc layer. 
        * Since we should have input and output same size. The simple option I found was to make padding = 1
        * That was the disaster. Cuda out of Memory!
-       * Since padding = 1 Every layer will have 64 x 64, which makes processing slower and takes lot of memory. Then I realised not only parameter count, memory storage, forward/ backward pass memory also matters.
+       * Since padding = 1 Every layer will have 64 x 64, which makes processing slower and takes lot of memory. Then I realised not only parameter count is important,but memory storage, forward/ backward pass memory also matters.
        
        **Attempt 2**
        
