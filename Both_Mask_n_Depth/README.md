@@ -49,14 +49,14 @@ Below are the results of applying different loss functions.
   <p align = "center">To View the images properly click on the image</p>
 
 
-For **i** and **ii**, I used similar loss function. But what is the difference. 
+**For **i** and **ii**, I used similar loss function. But what is the difference**
 
 1. **i** is trained for 7 epochs using complete dataset once.
 2. **ii** is trained using 80k dataset each time. Like transfer learning. 
    * My dataset is spread over 5 sets. In all the sets the images were similar. 
    * So taking the idea of transfer learning. Trained each set for 10 epochs at once. Saved the best model.
    * Then loaded the best model, and started training for next set.
-   < Questions Posed are
+   > Questions Posed are
    When resuming training for next set what should be the learning rate? Should it continue from where it stoped or start with the initial learning rate that was chosen for previous set.
    So to answer this question I tried both ways. For some sets I have contined where the LR stopped. For some I took as it was for initialised for previous one.
    If we start from where lr stopped previous, we may decay the LR. This is the the new set, the inital LR may be the better idea.
