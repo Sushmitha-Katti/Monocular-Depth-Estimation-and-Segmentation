@@ -24,7 +24,7 @@ Without knowing a problem statement we cannot build the appropriate Model. SO wh
 Interesting! But why do we need to build it? What is its use?
 
 > The goal of depth estimation is to obtain a representation of the spatial structure of a scene, recovering the three-dimensional shape and appearance of objects in imagery.
-
+>
 > Mask detection hepls in removal of background, its main use in medical field where we can use detect the tumereous cells, etc...
  
  So we now got the problem statement. Lets work on it.
@@ -76,8 +76,8 @@ Interesting! But why do we need to build it? What is its use?
          * Normalisation - To bring all images to same scale
          * To Tensor - Convert all images to tensor.
          
-         
-    
+      <br/>   
+      
       > *Couldn't try much transformation. The doubt I had was if we apply transformations to input then output will change. Output is dependent on input. Since it is not just object detection. However I could have applied transformations like brightness, Saturation which doesn't cause change in position of image*
        
        * **Bringing it to dataset formaat** [Refer here for code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/Dataset/MaskDepth.py) 
