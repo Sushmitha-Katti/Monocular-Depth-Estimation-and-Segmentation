@@ -212,7 +212,7 @@ Interesting! But why do we need to build it? What is its use?
  # **Code Explaination**:man_teacher:
  [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Code.md)
  
-   * All the functions and classes are implemented [here](https://github.com/Sushmitha-Katti/PyTNet). This contains each and every modules called.
+   * All the functions and classes are implemented [here](https://github.com/Sushmitha-Katti/PyTNet). **PyTNet, A deep neural net Libraby Built on top of Pytorch**
    * First Mount the drive
    * Clone the PytNet repo. Install all necessary library.
    * Unzip the data
