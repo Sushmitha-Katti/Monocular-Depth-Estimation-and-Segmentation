@@ -28,14 +28,10 @@
 * Evaluation Metrics : Dice Coefficient.
 * Total Count of Data trained : 400k
 
-## **Implementation**
-
-1. Trained on whole data(400k) using BCEwithLogitLoss for Mask and SSIM for Depth 
-
-
 ## **Results**
 
 Below are the results of applying different loss functions. 
+
 **i** --> BCEwithLogitLoss for mask. BCEwithLogitLoss for depth(trained for 7 epochs)
 
 **ii** -->  BCEwithLogitLoss for mask. BCEwithLogitLoss for depth(trained for 10 epochs of each of the 5 sets)
@@ -49,7 +45,7 @@ Below are the results of applying different loss functions.
  
   
 <p align = "center">Depth Results</p>
-<p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/combined-deptj.jpg"</p>
+<p align = "center"><img height = "500" src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/combined-depth.jpg"</p>
   <p align = "center">To View the images properly click on the image</p>
 
 
@@ -58,7 +54,7 @@ For **i** and **ii**, I used similar loss function. But what is the difference.
 1. **i** is trained for 7 epochs using complete dataset once.
 2. **ii** is trained using 80k dataset each time. Like transfer learning. 
    * My dataset is spread over 5 sets. In all the sets the images were similar. 
-   * So taking the idea of transfer learning. Trained each epoch for 10 epochs at once. Saved the best model.
+   * So taking the idea of transfer learning. Trained each set for 10 epochs at once. Saved the best model.
    * Then loaded the best model, and started training for next set.
    < Questions Posed are
    When resuming training for next set what should be the learning rate? Should it continue from where it stoped or start with the initial learning rate that was chosen for previous set.
@@ -74,10 +70,9 @@ For **i** and **ii**, I used similar loss function. But what is the difference.
 3. There is not much difference in **i** and **ii**. We can go with anyone. 
 
 ## **Links for Code Implementation**
-1. [BCEwithLogitLoss](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Depth/Depth_BCE.ipynb)
-2. [RMSE](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Depth/Depth_RMSE.ipynb)
-3. [SSIM+BCE](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Depth/Depth_SSIM%2BBCE.ipynb)
-4. [SSIM](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Depth/Depth_SSIM.ipynb)
+1. [BCEwithLogitLoss for both trained at once](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb)
+2. [BCEwithLogitLoss for both trained at setwise](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/MODEST_BCELOSS.ipynb)
+3. [BCEwithLogitLoss for mask and SSIM for depth](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/Modest(SSIM%2CBCE).ipynb)
 
 
 
