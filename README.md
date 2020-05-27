@@ -32,7 +32,7 @@ Interesting! But why do we need to build it? What is its use?
  # :small_orange_diamond: **Data Collection and Preprocessing**
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
-  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14){:target="_blank"}. Detail Explaination is provided there.
+  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14)<a href="https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14" target="_blank">Refer this link</a>. Detail Explaination is provided there.
   
   Finally we had
   * Foreground Images - 100
