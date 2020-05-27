@@ -32,7 +32,7 @@ Interesting! But why do we need to build it? What is its use?
  # **Data Collection and Preprocessing**:mag_right:
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
-  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14/?target=_blank). Detail Explaination is provided there.
+  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14/?target=_blank). Detailed Explaination is provided there.
   
   Finally we had
   * Foreground Images - 100
@@ -98,7 +98,8 @@ Interesting! But why do we need to build it? What is its use?
       * After this passed the returned values(traindata, testdata) to dataloader. This is the usual code as we use for any data loaders.
       [click here for the code](https://github.com/Sushmitha-Katti/PyTNet/blob/master/train_test_loader.py)
       
-      ![Sample Input](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/input.jpg)
+      <p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/input.jpg"></p>
+      <p align = "center">Sample Images</p>
       
       
       Now the data is ready to go into the model. But which model? Will see in next section.
@@ -155,7 +156,7 @@ Interesting! But why do we need to build it? What is its use?
        * Since every pass will be acumilated by gradients, by using backward, those gradients will only be backwarded. So we can use weighted loss function for backward
        
        
-                 '''torch.backward.autograd([loss_1, loss_2])'''
+                                        '''torch.backward.autograd([loss_1, loss_2])'''
                       
 # **Model Evaluation**:test_tube:
    * This was the hardest part I have delt with.
