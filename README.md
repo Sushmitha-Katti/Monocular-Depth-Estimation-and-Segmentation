@@ -179,7 +179,7 @@ Interesting! But why do we need to build it? What is its use?
       
  # **Implementation 👨‍💻**
    1. **Mask** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Mask)
-       * Model - Unet
+ 
        * Parameters - 4,321,473
        * Optimiser - Adam
        * Scheduler - Reduce Lr On Pleateau
@@ -188,7 +188,7 @@ Interesting! But why do we need to build it? What is its use?
        * Total No of data used - 80k(1 set)
   
    2. **Depth** [For more detailed explanation refer here](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/tree/master/Depth)
-      * Model - Unet
+ 
       * Parameters - 4,367,937
       * Optimiser - Adam
       * Scheduler - Reduce Lr
