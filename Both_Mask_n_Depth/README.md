@@ -3,7 +3,7 @@
 
 ## **Model**
 
-<p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Combined-Model.png"></p>
+<p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Combined-Model.jpg"></p>
 
 **There are three main parts in the model**
 1. **DobleConv** - Conv2D(kernel Size = 3)->BatchNormalisation->Relu->Conv2D(kernel Size = 3)->BatchNormalisation->Relu
