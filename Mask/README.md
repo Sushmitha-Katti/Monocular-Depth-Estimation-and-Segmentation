@@ -8,7 +8,7 @@
 **There are four main parts in the model**
 1. **DobleConv** - Conv2D(kerner Size = 3) ->Batch Normalisation -> Relu ->  Conv2D(kerner Size = 3) -> Batch Normalisation -> Relu
 2. **Down** - MaxPool -> DoubleConv
-3. **Up** - Upsample(bilinear) -> DoubleConv , Concatinate
+3. **Up** - Upsample(bilinear) -> DoubleConv -> Concatenate
 4. **OutC** - Conv2d(kerner Size = 1)
 5. a x b is the size after going thought that function
 
