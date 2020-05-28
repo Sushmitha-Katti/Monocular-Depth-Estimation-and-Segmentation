@@ -6,11 +6,11 @@
 <p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Mask-Model.jpg"></p>
 
 **There are four main parts in the model**
-1. **DobleConv** - Conv2D(kerner Size = 3) ->Batch Normalisation -> Relu ->  Conv2D(kerner Size = 3) -> Batch Normalisation -> Relu
+1. **DobleConv** - Conv2D(kernel Size = 3)->BatchNormalisation->Relu->Conv2D(kernel Size = 3)->BatchNormalisation->Relu
 2. **Down** - MaxPool -> DoubleConv
 3. **Up** - Upsample(bilinear) -> DoubleConv -> Concatenate
-4. **OutC** - Conv2d(kerner Size = 1)
-5. a x b is the size after going thought that function
+4. **OutC** - Conv2d(kernel Size = 1)
+5. a x b is the size of output after going through that layer
 
 **Parameters Count**
 * Total Parameters : 4,321,473
