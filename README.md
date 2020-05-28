@@ -234,6 +234,16 @@ Interesting! But why do we need to build it? What is its use?
  * Documentation. This is very important part. This is for us and others to understand our code.
  
  # **References**:books:
+1. [An Overview Of Semantic Segmentation](https://www.jeremyjordan.me/semantic-segmentation/)
+2. [Image Masking challenge. A Kaggle Competition](https://becominghuman.ai/image-masking-challenge-a-kaggle-competition-5a66f30aa335)
+3. [About UNET Arhcitecture](https://towardsdatascience.com/u-net-b229b32b4a71)
+4. [Pytorch implementation of Semantic Segmentation for Single class from scratch](https://medium.com/analytics-vidhya/pytorch-implementation-of-semantic-segmentation-for-single-class-from-scratch-81f96643c98c)
+5. [Deep neural network concepts for background subtraction:A systematic review and comparative evaluation](https://www.sciencedirect.com/science/article/abs/pii/S0893608019301303)
+6. [Depth estimation: Basics and Intution](https://towardsdatascience.com/depth-estimation-1-basics-and-intuition-86f2c9538cd1)
+7. [Research Guide for Depth Estimation with Deep Learning](https://heartbeat.fritz.ai/research-guide-for-depth-estimation-with-deep-learning-1a02a439b834)
+8. [Keras: Multiple Outputs and Multiple losses](https://www.pyimagesearch.com/2018/06/04/keras-multiple-outputs-and-multiple-losses/)
+9. [Depth Estimation and Semantic Segmentation from a Single RGB Image Using a Hybrid Convolutional Neural Network](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a9156be2-b27a-4ccb-9ebb-b90f581ca46c/sensors-19-01795.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200528%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200528T025942Z&X-Amz-Expires=86400&X-Amz-Signature=35c538c1b356ba5cff641e07aef1a543c25bae818795e8f09f4da21600a29830&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22sensors-19-01795.pdf%22)
+10. [HYBRIDNET FOR DEPTH ESTIMATION AND SEMANTIC SEGMENTATION](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0001563.pdf)
 
  
       
@@ -248,7 +258,7 @@ Interesting! But why do we need to build it? What is its use?
    
      
 
-      **Documentation In Progress**
+     
           
   
  
