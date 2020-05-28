@@ -76,7 +76,7 @@ Below are the results of applying different loss functions.
 3. There is not much difference in **i** and **ii**. We can go with anyone. 
 
 ## **Links for Code Implementation**
-1. [BCEwithLogitLoss for both trained at once](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb)
+1. [BCEwithLogitLoss for both trained at once - This is the final code](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb)
 2. [BCEwithLogitLoss for both trained at setwise](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/MODEST_BCELOSS.ipynb)
 3. [BCEwithLogitLoss for mask and SSIM for depth](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/Modest(SSIM%2CBCE).ipynb)
 
