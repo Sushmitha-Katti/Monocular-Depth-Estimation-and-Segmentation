@@ -1,6 +1,6 @@
 # **Depth Prediction**
 
-## **Model**
+## <p align="center">Model - **U Net**</p>
 
 
 <p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Depth-Model.jpg"></p>
