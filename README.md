@@ -25,9 +25,8 @@ Interesting! But why do we need to build it? What is its use?
 
 > The goal of depth estimation is to obtain a representation of the spatial structure of a scene, recovering the three-dimensional shape and appearance of objects in imagery.
 >
-> Mask detection hepls in removal of background, its main use in medical field where we can use detect the tumereous cells, etc...
- 
- So we now got the problem statement. Lets work on it.
+> Mask detection hepls in removal of background, its main use in medical field, where it extracts clinically relevant information from medical images. For example, radiologists may use machine learning to augment analysis, by segmenting an image into different organs, tissue types, or disease symptoms. This can reduce the time it takes to run diagnostic tests
+<br/>
  
  # **Data Collection and Preprocessing**:mag_right:
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
