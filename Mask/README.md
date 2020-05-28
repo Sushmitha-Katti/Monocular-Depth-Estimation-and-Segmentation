@@ -3,12 +3,14 @@
 ## **Model**
 
 
-<p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/unet-mask.png"></p>
+<p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Mask-Model.jpg"></p>
 
-**There are three main parts in the model**
-1. **DobleConv** - Conv->Batch Normalisation -> Relu -> Conv -> Batch Normalisation -> Relu
+**There are four main parts in the model**
+1. **DobleConv** - Conv2D(kerner Size = 3) ->Batch Normalisation -> Relu ->  Conv2D(kerner Size = 3) -> Batch Normalisation -> Relu
 2. **Down** - MaxPool -> DoubleConv
-3. **Up** - Upsample(bilinear) -> DoubleConv
+3. **Up** - Upsample(bilinear) -> DoubleConv , Concatinate
+4. **OutC** - Conv2d(kerner Size = 1)
+5. a x b is the size after going thought that function
 
 **Parameters Count**
 * Total Parameters : 4,321,473
