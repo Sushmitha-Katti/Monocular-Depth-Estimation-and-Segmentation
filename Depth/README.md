@@ -3,7 +3,7 @@
 ## **Model**
 
 
-<p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/unet-depth.png"></p>
+<p align="center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Depth-Model.jpg"></p>
 
 **There are three main parts in the model**
 1. **DobleConv** - Conv->Batch Normalisation -> Relu -> Conv -> Batch Normalisation -> Relu
