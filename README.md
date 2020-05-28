@@ -232,6 +232,8 @@ Interesting! But why do we need to build it? What is its use?
     1. Theoritical knowledge - Like which model to use, what happens when we use this etc. Breaking up the problem statement. Achiving good results in small problems then combine all those to achive the goal.
     2. Techincal Knowledge -Coding the theory parts, bringing them to reality. Simplifying the code.
  * Documentation. This is very important part. This is for us and others to understand our code.
+ * Neural Networks are indeed crazy. They learn whatever we make them learn whether it is wrong or right. So we should make them learn correctly.
+ * Most of the time we play with losses and optimisers than model. Model is also important. But correct loss functions can do magic.
  
  # **References**:books:
 1. [An Overview Of Semantic Segmentation](https://www.jeremyjordan.me/semantic-segmentation/)
