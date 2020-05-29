@@ -15,7 +15,7 @@
 
 Without knowing a problem statement we cannot build the appropriate Model. SO what is our problem statement?
 
-|  "Build a DNN Model that takes background, background+foreground as a input and gives the depth and mask of them as a output" |
+|  "Build a DNN Model that takes background, background_foreground as a input and gives the depth and mask of them as a output" |
 |-------------------------------------------------------------------------------------------------------------------------------|
 <p align="center"><img width=500 src="https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/problem.jpg"></p> 
 
@@ -247,6 +247,10 @@ Interesting! But why do we need to build it? What is its use?
 8. [Keras: Multiple Outputs and Multiple losses](https://www.pyimagesearch.com/2018/06/04/keras-multiple-outputs-and-multiple-losses/)
 9. [Depth Estimation and Semantic Segmentation from a Single RGB Image Using a Hybrid Convolutional Neural Network](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a9156be2-b27a-4ccb-9ebb-b90f581ca46c/sensors-19-01795.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200528%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200528T025942Z&X-Amz-Expires=86400&X-Amz-Signature=35c538c1b356ba5cff641e07aef1a543c25bae818795e8f09f4da21600a29830&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22sensors-19-01795.pdf%22)
 10. [HYBRIDNET FOR DEPTH ESTIMATION AND SEMANTIC SEGMENTATION](http://150.162.46.34:8080/icassp2018/ICASSP18_USB/pdfs/0001563.pdf)
+
+
+
+**[Link for final Code](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb)
 
  
       
