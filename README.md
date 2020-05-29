@@ -250,7 +250,7 @@ Interesting! But why do we need to build it? What is its use?
 
 
 
-**[Link for Final Code]**(https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb
+**[Link for Final Code](https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Both_Mask_n_Depth/FinalCode.ipynb**
 
  
       
