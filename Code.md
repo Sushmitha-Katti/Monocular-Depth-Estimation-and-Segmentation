@@ -3,7 +3,7 @@
 All the code is implemented [here](https://github.com/Sushmitha-Katti/PyTNet). **PyTNet, A deep neural net Libraby Built on top of Pytorch**
 
 <pre>
-   extract_data(no_of_set = 1): <a href="https://github.com/Sushmitha-Katti/PyTNet" title="Extract">Code</a>
+   extract_data(no_of_set = 1): <a href="https://github.com/Sushmitha-Katti/PyTNet/blob/master/evaluation_metrics/loss.py" title="Extract">Code</a>
 </pre>
 
 Unzips the data from drive. It takes input as no_of_set. Since the data is spread across 5 zips. It asks how many sets need to be extracted. To play with data you can extract one or 2 sets. To extract whole data we should give as 5. Above that it gives error
