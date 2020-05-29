@@ -31,7 +31,9 @@ Interesting! But why do we need to build it? What is its use?
  # **Data Collection and Preprocessing**:mag_right:
   Data is like a fuel in AI/ML. Without it nothing happens. Took 100 fg and 100bg images, overalapped fg on bg on 20 random positions, created masks and depths of them.
   
-  For more info can [refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14/?target=_blank). Detailed Explaination is provided there.
+  [For more info can refer this link](https://github.com/Sushmitha-Katti/EVA-4/tree/master/Session14/?target=_blank). Detailed Explaination is provided there.
+  
+  [Link for data](https://drive.google.com/drive/u/0/folders/1RbJHVxo91jhekv3_E9GZvujUDNDaxFQu)
   
   Finally we had
   * Foreground Images - 100
