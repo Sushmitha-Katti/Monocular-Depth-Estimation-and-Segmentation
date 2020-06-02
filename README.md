@@ -212,7 +212,7 @@ Interesting! But why do we need to build it? What is its use?
        * Down - MaxPool -> DoubleConv
        * Up - Upsample(bilinear) -> DoubleConv -> Concatenate
        * OutC - Conv2d(kernel Size = 1)
-       * a x b is the size of output after going through that layer
+       * a x b is the size of output after going through that layer.
        
       <h2><b>Results</b></h2>
      
