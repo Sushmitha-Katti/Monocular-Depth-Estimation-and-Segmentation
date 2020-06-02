@@ -215,11 +215,11 @@ Interesting! But why do we need to build it? What is its use?
        * a x b is the size of output after going through that layer
        
       <h2><b>Results</b></h2>
-      <p align = "center><h3>Depth</h3>
-      <img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth-result.jpeg">
-      <h3>Mask</h3
-      <img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/mask-result.jpeg">
-      </p>
+      <p align = "center><h3>Depth</h3></p
+      <p align = "center><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth-result.jpeg"></p>
+ <p align = "center><h3>Mask</h3></p>
+      <p align = "center><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/mask-result.jpeg"></p
+    
        
        
        
