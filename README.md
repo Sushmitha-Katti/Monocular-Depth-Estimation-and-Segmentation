@@ -202,6 +202,12 @@ Interesting! But why do we need to build it? What is its use?
        * Loss - BCE, SSIM
        * Total No of Epochs trained for - 10(max)
        * Total number of data used - 400K(whole data)
+       
+       **Final Model**
+       <p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Combined-Model.jpg"</p
+       
+       
+       **Results**
      
          
  # **Code Explaination**:man_teacher:
