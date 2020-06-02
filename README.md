@@ -216,7 +216,7 @@ Interesting! But why do we need to build it? What is its use?
        
       <h2><b>Results</b></h2>
      
-      <p align = "center><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/result.jpg"></p>
+      <p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/result.jpg"></p>
 
     
        
