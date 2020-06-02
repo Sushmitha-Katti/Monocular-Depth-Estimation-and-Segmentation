@@ -203,8 +203,24 @@ Interesting! But why do we need to build it? What is its use?
        * Total No of Epochs trained for - 10(max)
        * Total number of data used - 400K(whole data)
        
-       **Final Model**
-       <p align = "center"><img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Combined-Model.jpg"</p
+        <p align = "center"><h2><b>Final Model - Double U(W) Net</b></h2>
+      <img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/Combined-Model.jpg">
+      
+      **There are four main parts in the model**
+
+       * DobleConv - Conv2D(kernel Size = 3)->BatchNormalisation->Relu->Conv2D(kernel Size = 3)->BatchNormalisation->Relu
+       * Down - MaxPool -> DoubleConv
+       * Up - Upsample(bilinear) -> DoubleConv -> Concatenate
+       * OutC - Conv2d(kernel Size = 1)
+       * a x b is the size of output after going through that layer
+       
+      <h2><b>Results</b></h2>
+      <h3>Depth</h3>
+      <img src = "https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/depth-result.jpeg">
+      
+      <h3>Mask</h3
+      <img src = https://github.com/Sushmitha-Katti/Monocular-Depth-Estimation-and-Segmentation/blob/master/Assets/mask-result.jpeg>
+      </p>
        
        
        **Results**
